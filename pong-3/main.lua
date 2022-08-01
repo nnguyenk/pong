@@ -132,7 +132,7 @@ function love.draw()
     love.graphics.rectangle('fill', 10, player1Y, 5, 20)
 
     -- render second paddle (right side)
-    love.graphics.rectangle('fill', VIRTUAL_WIDTH - 10, player2Y, 5, 20)
+    love.graphics.rectangle('fill', VIRTUAL_WIDTH - 15, player2Y, 5, 20)
 
     -- render ball (center)
     love.graphics.rectangle('fill', VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 4, 4)
