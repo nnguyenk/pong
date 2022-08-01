@@ -94,7 +94,7 @@ function love.load()
 
     -- initialize player paddles and ball
     player1 = Paddle(10, 30, 5, 20)
-    player2 = Paddle(VIRTUAL_WIDTH - 10, VIRTUAL_HEIGHT - 30, 5, 20)
+    player2 = Paddle(VIRTUAL_WIDTH - 15, VIRTUAL_HEIGHT - 50, 5, 20)
     ball = Ball(VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 4, 4)
 
     gameState = 'start'
@@ -162,7 +162,7 @@ function love.update(dt)
         gameState = 'serve'
     end
 
-    if ball.x > VIRTUAL_WIDTH then
+    if ball.x + 4 > VIRTUAL_WIDTH then
         servingPlayer = 2
         player1Score = player1Score + 1
         ball:reset()
